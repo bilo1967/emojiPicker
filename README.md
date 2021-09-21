@@ -31,7 +31,7 @@ $('#picker-button-id').emojiPicker('any-text-field-id', {
   position: 'below-right'
 });
 ```
-The `emojis` option contains the list of emoji codes you want to display in the panel. The `classes` and `css` are classes and styles you want to add to the emoji panel, while `emojiCSS` is the list of styles which will be associated to any single emoji entry.
+The `emojis` option contains the list of emoji codes you want to display in the panel. The `classes` and `css` are CSS classes and styles you want to apply to the emoji panel, while `emojiCSS` is the list of styles which will be applied to any single emoji entry.
 The panel will have `columns` columns and will be displayed below or over the button, aligned with its right or left side according with the `position` parameter. Possible values for `position` are:
 - below-right (or bottom-right)
 
