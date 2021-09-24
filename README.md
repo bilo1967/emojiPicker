@@ -12,7 +12,7 @@ Here is a minimal example of use:
 ```javascript
 $('#picker-button-id-1').emojiPicker('any-text-field-id');
 
-$('#picker-button-id-2').emojiPicker(() => function(emoji) { 
+$('#picker-button-id-2').emojiPicker((emoji) => { 
   console.log(emoji); 
 });
 ```
