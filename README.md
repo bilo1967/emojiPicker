@@ -3,14 +3,18 @@ A simple JQuery picker component for Unicode emoticons
 
 emojiPicker is a very simple JQuery component for selecting unicode emoticons and inserting them into a text field.
 
-The component is ideally associated with a button (or more generally with any clickable tag) and bound with a text field in which the emoji will be inserted.
+The component is ideally associated with a button (or more generally with any clickable tag) and bound with a text field (either textarea, input or any _contenteditable_ tag) in which the emoji will be inserted. You can also provide a callback function, which will receive the clicked emoji as a parameter, instead of a text field id.
 
 When you click the associated button a div panel with the list of available emojis is displayed (below or over the button, aligned with its left or right side). From this panel you can click the emojis and they are inserted in/appended to the text field you have bound.
 
 Here is a minimal example of use:
 
 ```javascript
-$('#picker-button-id').emojiPicker('any-text-field-id');
+$('#picker-button-id-1').emojiPicker('any-text-field-id');
+
+$('#picker-button-id-2').emojiPicker(() => function(emoji) { 
+  console.log(emoji); 
+});
 ```
 
 The component is customizable by adding options:
